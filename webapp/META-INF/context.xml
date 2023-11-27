@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/">
+    <Resource name="dataSource/mysql/prod"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://127.0.0.1:3306/ydlclass?characterEncoding=utf8&amp;serverTimezone=Asia/Shanghai"
+              username="root" password="root"
+              maxTotal="20" maxIdle="10"
+              maxWaitMillis="10000" />
+
+    <Resource name="dataSource/mysql/test"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://127.0.0.1:3306/boke?characterEncoding=utf8&amp;serverTimezone=Asia/Shanghai"
+              username="root" password="root"
+              maxTotal="20" maxIdle="10"
+              maxWaitMillis="10000" />
+</Context>
+
+
+
